@@ -1,6 +1,9 @@
 namespaceOverride: monitoring
-global.defaultStorageClass: prometheus
-server.retention: 20d
-server.persistence.enabled: true
-server.persistence.storageClass: prometheus
-server.persistence.size: 10Gi
+global:
+  defaultStorageClass: prometheus
+server:
+  retention: 20d
+  persistence:
+    enabled: true
+    storageClass: prometheus
+    size: 10Gi
