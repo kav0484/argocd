@@ -1,4 +1,4 @@
 namespaceOverride: monitoring
+storageClass: prometheus
 retention: 20d
 server.persistence.enabled: true
-server.persistence.dataSource: prometheus
