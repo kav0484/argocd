@@ -1,5 +1,5 @@
 namespaceOverride: monitoring
-retention: 20d
+server.retention: 20d
 server.persistence.enabled: true
 server.persistence.storageClass: prometheus
 server.persistence.size: 10Gi
