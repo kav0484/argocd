@@ -2,6 +2,8 @@ namespaceOverride: monitoring
 global:
   defaultStorageClass: prometheus
 server:
+  updateStrategy:
+    type: Recreate
   retention: 20d
   persistence:
     enabled: true
