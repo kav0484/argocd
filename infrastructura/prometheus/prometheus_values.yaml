@@ -8,6 +8,6 @@ server:
     storageClass: prometheus
     size: 10Gi
   extraScrapeConfigs:
-  - job_name: 'kube-state-metrics'
-    static_configs:
-    - targets: ['kube-state-metrics.monitoring.svc.cluster.local:8080']
+    - job_name: 'kube-state-metrics'
+      static_configs:
+      - targets: ['kube-state-metrics.monitoring.svc.cluster.local:8080']
