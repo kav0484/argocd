@@ -1,1 +1,9 @@
-defaultStorageClass: prometheus
+defaultStorageClass: nfs
+ingress:
+  enabled: true
+  hostname: grafana.ruadmin24.ru
+  tls: true
+  secrets:
+    - name: ruadmin24-ru-tls
+      key: tls.key
+      certificate: tls.crt
