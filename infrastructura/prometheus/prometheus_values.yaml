@@ -1,13 +1,12 @@
 namespaceOverride: monitoring
 global:
-  defaultStorageClass: prometheus
+  defaultStorageClass: nfs
 server:
   updateStrategy:
     type: Recreate
   retention: 20d
   persistence:
     enabled: true
-    storageClass: prometheus
     size: 10Gi
   extraScrapeConfigs:
     - job_name: 'kube-state-metrics'
