@@ -5,7 +5,6 @@ ingress:
   ingressClassName: nginx
   hostname: grafana.ruadmin24.ru
   tls: true
-  secrets:
-    - name: ruadmin24-ru-tls
-      key: tls.key
-      certificate: tls.crt
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    cert-manager.io/cluster-issuer: letsencrypt-cloudflare-issuer-prod
