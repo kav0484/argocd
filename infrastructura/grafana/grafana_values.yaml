@@ -1,6 +1,5 @@
-persistent:
-  enabled: true
-  storageClass: nfs
+global:
+  defaultStorageClass: nfs
 ingress:
   enabled: true
   hostname: grafana.ruadmin24.ru
