@@ -2,6 +2,7 @@ global:
   defaultStorageClass: nfs
 ingress:
   enabled: true
+  ingressClassName: nginx
   hostname: grafana.ruadmin24.ru
   tls: true
   secrets:
