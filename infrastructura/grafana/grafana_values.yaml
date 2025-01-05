@@ -8,6 +8,7 @@ ingress:
   hostname: grafana.ruadmin24.ru
   annotations:
     kubernetes.io/ingress.class: nginx
+    kubernetes.io/ingress.allow-http: "false"
   extraTls:
   - hosts:
     - grafana.ruadmin24.ru
