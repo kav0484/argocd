@@ -1,5 +1,8 @@
 global:
   defaultStorageClass: nfs
+grafana:
+  updateStrategy:
+    type: Recreate
 ingress:
   enabled: true
   #hostname: grafana.ruadmin24.ru
