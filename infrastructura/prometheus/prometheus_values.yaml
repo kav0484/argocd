@@ -31,12 +31,12 @@ server:
       authorization:
         credentials_file: /var/run/secrets/kubernetes.io/serviceaccount/token
       metrics_path: /metrics/cadvisor
-    # - job_name: 'k8pods'
-    #   kubernetes_sd_configs:
-    #   - role: pod
-    #   relabel_configs:
-    #   - source_labels: [__meta_kubernetes_pod_container_port_name]
-    #     regex: metrics
-    #     action: keep
-    #   - source_labels: [__meta_kubernetes_pod_container_name]
-    #     target_label: job
+    - job_name: 'k8pods'
+      kubernetes_sd_configs:
+      - role: pod
+      relabel_configs:
+      - source_labels: [__meta_kubernetes_pod_container_port_name]
+        regex: metrics
+        action: keep
+      - source_labels: [__meta_kubernetes_pod_container_name]
+        target_label: job
