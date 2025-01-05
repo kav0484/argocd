@@ -9,6 +9,7 @@ ingress:
   annotations:
     kubernetes.io/ingress.class: nginx
     kubernetes.io/ingress.allow-http: "false"
+    nignx.ingress.kubernetes.io/force-ssl-redirect: true
   extraTls:
   - hosts:
     - grafana.ruadmin24.ru
