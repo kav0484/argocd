@@ -21,3 +21,16 @@ nodeExporter:
     darwin:
       enabled: false
 
+prometheus:
+  prometheusSpec:
+    retention: 30d
+    storageSpec:
+    volumeClaimTemplate:
+      spec:
+        storageClassName: nfs
+        accessModes: ["ReadWriteOnce"]
+        resources:
+          requests:
+            storage: 10Gi
+
+
