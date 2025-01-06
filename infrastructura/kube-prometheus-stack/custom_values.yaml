@@ -2,3 +2,13 @@ grafana:
   defaultDashboardsTimezone: Europe/Moscow
   ingress:
     enabled: true
+    annotations:
+      kubernetes.io/ingress.class: nginx
+      ingress.kubernetes.io/ssl-redirect: true
+    hosts:
+    - grafana.ruadmin24.ru
+    tls:
+    - secretName: ruadmin24-ru-tls
+      hosts:
+      - grafana.ruadmin24.ru
+
