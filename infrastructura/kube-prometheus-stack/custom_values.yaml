@@ -11,3 +11,13 @@ grafana:
       hosts:
       - grafana.ruadmin24.ru
 
+nodeExporter:
+  enabled: true
+  operatingSystems:
+    linux:
+      enabled: true
+    aix:
+      enabled: false
+    darwin:
+      enabled: false
+
