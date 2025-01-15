@@ -1,0 +1,14 @@
+global:
+  clusterLabel: ruadmin24
+defaultDashboards:
+  defaultTimezone: Europe/Moscow
+
+grafana:
+  ingress: true
+  hosts:
+    - grafana.ruadmin24.ru
+  tls:
+    - secretName: ruadmin24-ru-tls
+      hosts:
+        - grafana.ruadmin24.ru
+
