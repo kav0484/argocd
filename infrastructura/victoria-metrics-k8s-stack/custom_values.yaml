@@ -1,7 +1,14 @@
 global:
   clusterLabel: ruadmin24
+  nameOverride: victoria-metrics
 defaultDashboards:
   defaultTimezone: Europe/Moscow
+
+vmsingle:
+  spec:
+    retentionPeriod: "30d"
+    storage:
+      storageClassName: nfs
 
 grafana:
   ingress:
