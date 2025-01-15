@@ -9,10 +9,10 @@ grafana:
     annotations:
       kubernetes.io/ingress.class: nginx
       kubernetes.io/tls-acme: "true"
-  hosts:
-    - grafana.ruadmin24.ru
-  tls:
-    - secretName: ruadmin24-ru-tls
-      hosts:
-        - grafana.ruadmin24.ru
+    hosts:
+      - grafana.ruadmin24.ru
+    tls:
+      - secretName: ruadmin24-ru-tls
+        hosts:
+          - grafana.ruadmin24.ru
 
